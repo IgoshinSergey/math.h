@@ -56,7 +56,6 @@ clean:
 	@rm -rf test gcov_test
 
 clang:
-	@cp ../materials/linters/.clang-format .
 	@clang-format -n *.c *.h 
 	@clang-format -n $(TESTDIR)*.h $(TESTDIR)*.c
-	@rm -rf .clang-format
+	
